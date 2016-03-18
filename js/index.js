@@ -89,6 +89,6 @@ $(document).ready(function() {
             //Do what ever you want here when logged out like reloading the page
             window.location.reload();
         });
-    };
+    }
 
 });
