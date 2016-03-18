@@ -101,7 +101,7 @@ FB.getLoginStatus(function(ret) {
        ///do something if they aren't logged in
        //or just get rid of this if you don't need to do something if they weren't logged in
     }
-});
+}
 
     	);
 
