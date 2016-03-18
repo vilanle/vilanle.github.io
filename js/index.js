@@ -59,6 +59,9 @@ $(document).ready(function() {
 
 	  };
 
+
+
+
 	  // Load the SDK asynchronously
 	  (function(d, s, id) {
 	    var js, fjs = d.getElementsByTagName(s)[0];
@@ -81,6 +84,13 @@ $(document).ready(function() {
 
     $( "#submit-button" ).click(function() {
         window.location.href="camps.html";
+    });
+
+
+    $( "#logout-button" ).click(function() {
+		  FB.logout(function(response) {
+			   // Person is now logged out
+		  });
     });
 
 });
