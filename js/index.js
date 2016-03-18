@@ -88,7 +88,7 @@
 
 $( document ).ready(function() {
     $( "#submit-button" ).click(function() {
-    	if (document.getElementById("location-input").value == "Joshua Tree"){
+    	if (location-text.value == "Joshua Tree"){
         	window.location.href="camps.html";}
     });
 });
