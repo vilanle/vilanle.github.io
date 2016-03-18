@@ -38,7 +38,7 @@ $(document).ready(function() {
 
   window.fbAsyncInit = function() {
   FB.init({
-    appId      : 913759705388010,
+    appId      : '913759705388010',
     cookie     : true,  // enable cookies to allow the server to access
                         // the session
     xfbml      : true,  // parse social plugins on this page
