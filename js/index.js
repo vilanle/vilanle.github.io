@@ -1,9 +1,11 @@
 $(document).ready(function() {
 
+	FB.login(function(response){
+	  window.location.reload();
+	});
+
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
-  	window.location.reload();
-
     console.log('statusChangeCallback');
     console.log(response);
     // The response object is returned with a status field that lets the
