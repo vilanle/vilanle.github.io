@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	function fbLogout() {
+function fbLogout() {
         FB.logout(function (response) {
             //Do what ever you want here when logged out like reloading the page
             window.location.reload();
