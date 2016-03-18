@@ -57,8 +57,6 @@ $(document).ready(function() {
 	    statusChangeCallback(response);
 	  });
 
-	  };
-
 
 
 
