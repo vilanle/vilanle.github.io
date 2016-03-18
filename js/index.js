@@ -27,8 +27,8 @@ $(document).ready(function() {
   // Button.  See the onlogin handler attached to it in the sample
   // code below.
   function checkLoginState() {
-  	window.location.href="camps.html";
     FB.getLoginStatus(function(response) {
+      window.location.reload();
       statusChangeCallback(response);
     });
   }
