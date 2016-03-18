@@ -23,12 +23,6 @@ $(document).ready(function() {
     }
   }
 
-	function fbLogin() {
-			FB.login(function(response) {
-                window.location.reload();
-			});
-        }
-
     function fbLogout() {
             FB.logout(function (response) {
                 //Do what ever you want here when logged out like reloading the page
