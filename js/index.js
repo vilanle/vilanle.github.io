@@ -24,8 +24,8 @@ $(document).ready(function() {
   }
 
 	function fbLogin() {
-			FB.login(function (response){
-			  window.location.reload();
+			FB.login(function(response) {
+                window.location.reload();
 			});
         }
 
