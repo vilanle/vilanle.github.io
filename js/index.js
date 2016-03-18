@@ -23,17 +23,11 @@ $(document).ready(function() {
     }
   }
 
-    function fbLogout() {
-            FB.logout(function (response) {
-                //Do what ever you want here when logged out like reloading the page
-                window.location.reload();
-            });
-        }
-
   // This function is called when someone finishes with the Login
   // Button.  See the onlogin handler attached to it in the sample
   // code below.
   function checkLoginState() {
+  	window.location.reload();
     FB.getLoginStatus(function(response) {
       statusChangeCallback(response);
     });
