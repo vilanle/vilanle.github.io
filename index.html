@@ -22,28 +22,6 @@
     <!-- Custom Javascript -->
     <script type="text/javascript" src="js/index.js"></script>
 
-    <script>
-
-      // This function is called when someone finishes with the Login
-      // Button.  See the onlogin handler attached to it in the sample
-      // code below.
-      function checkLoginState() {
-        FB.getLoginStatus(function(response) {
-          statusChangeCallback(response);
-        });
-      }
-
-      window.fbAsyncInit = function() {
-      FB.init({
-        appId      : '913759705388010',
-        cookie     : true,  // enable cookies to allow the server to access
-                            // the session
-        xfbml      : true,  // parse social plugins on this page
-        version    : 'v2.5' // use graph api version 2.5
-      });
-
-    </script>
-
     <!-- Custom CSS -->
     <link href="css/index.css" rel="stylesheet">
 
@@ -79,11 +57,12 @@
             <br>
 
         </div>
-            <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
 
-<div id="status">
-</div>
+        <fb:login-button size="xlarge" scope="public_profile,email" onlogin="checkLoginState();">
+        </fb:login-button>
+        <div id="status">
+        </div>
+
     </header>
 
     <!-- jQuery -->
