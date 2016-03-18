@@ -63,7 +63,7 @@ input[type="text"] {
 }
 
 /* Input Text Form */
-#formGroupExampleInput.form-control {
+#location-input.form-control {
     width: 45%;
     size: 200%;
 }
