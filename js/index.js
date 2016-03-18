@@ -86,23 +86,11 @@ $(document).ready(function() {
         window.location.href="camps.html";
     });
 
-
-    $( "#logout-button" ).click(
-
-//check if logout is
-FB.getLoginStatus(function(ret) {
-    /// are they currently logged into Facebook?
-    if(ret.authResponse) {
-        //they were authed so do the logout
-        FB.logout(function(response) {
-           //do your stuff here.
+	function fbLogout() {
+        FB.logout(function (response) {
+            //Do what ever you want here when logged out like reloading the page
+            window.location.reload();
         });
-    } else {
-       ///do something if they aren't logged in
-       //or just get rid of this if you don't need to do something if they weren't logged in
     }
-}
-
-    	);
 
 });
