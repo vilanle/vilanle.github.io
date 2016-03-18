@@ -89,15 +89,19 @@ $(document).ready(function() {
 
     $( "#logout-button" ).click(
 
-		function fbLogoutUser() {
-		    FB.getLoginStatus(function(response) {
-		        if (response && response.status === 'connected') {
-		            FB.logout(function(response) {
-		                document.location.reload();
-		            });
-		        }
-		    });
-		}
+//check if logout is
+FB.getLoginStatus(function(ret) {
+    /// are they currently logged into Facebook?
+    if(ret.authResponse) {
+        //they were authed so do the logout
+        FB.logout(function(response) {
+           //do your stuff here.
+        });
+    } else {
+       ///do something if they aren't logged in
+       //or just get rid of this if you don't need to do something if they weren't logged in
+    }
+});
 
     	);
 
