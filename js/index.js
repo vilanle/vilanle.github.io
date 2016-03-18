@@ -1,9 +1,5 @@
 $(document).ready(function() {
 
-    $( "#submit-button" ).click(function() {
-        window.location.href="camps.html";
-    });
-
       // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
     console.log('statusChangeCallback');
@@ -82,5 +78,9 @@ $(document).ready(function() {
         'Thanks for logging in, ' + response.name + '!';
     });
   };
+
+      $( "#submit-button" ).click(function() {
+        window.location.href="camps.html";
+    });
 
 });
