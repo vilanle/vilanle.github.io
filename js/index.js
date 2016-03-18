@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+    function fbLogout() {
+            FB.logout(function (response) {
+                //Do what ever you want here when logged out like reloading the page
+                window.location.reload();
+            });
+        }
+
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
     console.log('statusChangeCallback');
@@ -22,13 +29,6 @@ $(document).ready(function() {
         'into Facebook.';
     }
   }
-
-    function fbLogout() {
-            FB.logout(function (response) {
-                //Do what ever you want here when logged out like reloading the page
-                window.location.reload();
-            });
-        }
 
   // This function is called when someone finishes with the Login
   // Button.  See the onlogin handler attached to it in the sample
