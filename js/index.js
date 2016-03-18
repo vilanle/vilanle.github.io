@@ -87,10 +87,18 @@ $(document).ready(function() {
     });
 
 
-    $( "#logout-button" ).click(function() {
-		  FB.logout(function(response) {
-			   // Person is now logged out
-		  });
-    });
+    $( "#logout-button" ).click(
+
+		function fbLogoutUser() {
+		    FB.getLoginStatus(function(response) {
+		        if (response && response.status === 'connected') {
+		            FB.logout(function(response) {
+		                document.location.reload();
+		            });
+		        }
+		    });
+		}
+
+    	);
 
 });
