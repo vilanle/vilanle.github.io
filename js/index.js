@@ -1,9 +1,5 @@
 $(document).ready(function() {
 
-	FB.login(function(response){
-	  window.location.reload();
-	});
-
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
     console.log('statusChangeCallback');
@@ -26,6 +22,12 @@ $(document).ready(function() {
         'into Facebook.';
     }
   }
+
+	function fbLogin() {
+			FB.login(function (response){
+			  window.location.reload();
+			});
+        }
 
     function fbLogout() {
             FB.logout(function (response) {

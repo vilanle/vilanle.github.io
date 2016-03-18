@@ -22,14 +22,6 @@
     <!-- Custom Javascript -->
     <script type="text/javascript" src="js/index.js"></script>
 
-    <script>
-    function fbLogout() {
-            FB.logout(function (response) {
-                //Do what ever you want here when logged out like reloading the page
-                window.location.reload();
-            });
-        }
-    </script>
 
     <!-- Custom CSS -->
     <link href="css/index.css" rel="stylesheet">
@@ -64,8 +56,7 @@
                     <button type="button" id="submit-button" class="btn btn-lg">Let's Camp!</button>
                 </form>
             <br>
-        <fb:login-button size="large" scope="public_profile,email" onlogin="checkLoginState();">
-        </fb:login-button>
+<span id="fblogin" onclick="fbLogin()"><a class="fb_button fb_button_medium"><span class="fb_button_text">Login with facebook</span></a></span>
 
 <span id="fbLogout" onclick="fbLogout()"><a class="fb_button fb_button_medium"><span class="fb_button_text">Logout</span></a></span>
 
