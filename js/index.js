@@ -32,6 +32,13 @@
     });
   }
 
+  function fbLogout() {
+    FB.logout(function (response) {
+        //Do what ever you want here when logged out like reloading the page
+        window.location.reload();
+    });
+  }
+
   window.fbAsyncInit = function() {
   FB.init({
     appId      : '913759705388010',
